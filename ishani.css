@@ -45,10 +45,10 @@ header nav{
     padding-left: 10%;
 }
 
-h1, h2, h3{
-    /* background-color: black; */
+/* h1, h2, h3{
+     background-color: black; 
     
-}
+} */
 .overlay{
     position:absolute;
     top:0;
@@ -88,9 +88,9 @@ h3{
 }
 
 
-body {
-    /* background-color:#86a1be ;     */
-}
+/* body {
+     background-color:#86a1be ;     
+} */
 
 ul {
     background-color:transparent;
