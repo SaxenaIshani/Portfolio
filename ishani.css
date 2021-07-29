@@ -1,32 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
 * {
     padding: 0;
     margin: 0;
+    
+    font-family: 'Poppins', sans-serif;
+    color: #e4e4ec;
+
     }
-header.page-header {
-    background-color: #112a46;
+html{
+    width: 100%;
+    height: auto;
+}
+video{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
     display: flex;
-    height: 120px;
-    min-width: 120px;
     align-items: center;
     justify-content: center;
-    text-shadow: #000 0 0 .2em;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 1;
+}
+
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  padding: 40px 100px 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00000000;
+  
+}
+
+header nav{
+    padding-left: 10%;
+}
+
+h1, h2, h3{
+    /* background-color: black; */
+    
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    padding:40px 100px;
+    text-align: left;
+    margin-top: 15%; 
+    overflow: hidden;
+}
+
+.overlay h2,h3 {background-color: #00000000;}
+
+h3{
+    font-size: 5em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
 }
 
 .page-footer{
-    background-color: #112a46;
-    display: flex;
-    height: 120px;
-    min-width: 120px;
+    background-color: black;
+    /* height: 120px;
+    min-width: 120px;  */
+    padding-bottom: 10px;
     text-shadow: #000 0 0 .2em;
     justify-content: center;
     align-content: center;
 }
 
-h1, h2, h3{
-    color:#faffd8;
-}
+
 body {
-    background-color:#86a1be ;    
+    /* background-color:#86a1be ;     */
 }
 
 ul {
@@ -48,7 +111,7 @@ li {
 }
 li a {
     display:block;
-    color:#faffd8;
+    
     text-align:center;
     padding: 14px 16px;
     text-decoration: none;
@@ -58,15 +121,14 @@ li a:hover:not(.active) {
 }
 .active {
     background-color: #253e5a;
-    color:#faffd8;
+    
 }
-.sticky {
-	position: -webkit-sticky;
+.sticky { 
+	position: -webkit-sticky; 
 	position: sticky;
-	top: 0;
-}
+    top: 0; }
 
-.container {
+/* .container {
     display: flex;
     width: 100%;
     padding-bottom: 100px;
@@ -80,9 +142,9 @@ li a:hover:not(.active) {
 }
 
 p {
-    color: #faffdc;
+   
     font-size:17px;
-    font-family:"RoxboroughCF";
+    
 
 }
 
