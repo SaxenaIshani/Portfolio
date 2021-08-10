@@ -71,7 +71,8 @@ h3{
 }
 
 
-.container { position:relative; }
+/* .container { position:relative; } */
+.container{display: flex; margin-top: 15%}
 .container video {
     position:relative;
     z-index:0;
@@ -91,6 +92,11 @@ h3{
 /* body {
      background-color:#86a1be ;     
 } */
+
+.gradient-bg {
+    background: rgb(9,10,13);
+    background: linear-gradient(90deg, rgba(9,10,13,1) 0%, rgba(58,72,98,1) 16%, rgba(178,196,225,1) 100%);
+}
 
 ul {
     background-color:transparent;
@@ -128,51 +134,57 @@ li a:hover:not(.active) {
 	position: sticky;
     top: 0; }
 
-/* .container {
-    display: flex;
-    width: 100%;
-    padding-bottom: 100px;
+th,td{
+    padding: 5px 5px 5px 5px;
 }
 
-.text-container {
-    padding-left: 150px;
+.glass-panel {
+  /* background: rgba(0,0,0,0.2); */
+  /* background: inherit; */
+  background: rgb(9,10,13);
+  background: linear-gradient(270deg, rgba(9,10,13,1) 0%, rgba(58,72,98,1) 16%, rgb(138, 159, 192) 100%);
+  border-radius: 3%;
+  margin: 10% 5% 10% 5%;
+  padding: 5% 5% 5% 5%;
+  box-shadow:  0 0 2000px rgba(255, 255, 255, 0);
+}
+
+.glass-panel img{
+    padding-top: 25%;
+    margin-left: 8%;
+}
+
+.glass-panel::before{ background: inherit;}
+
+.glass-panel-mirrored{
+    background: rgb(9,10,13);
+  background: linear-gradient(270deg, rgba(9,10,13,1) 0%, rgba(58,72,98,1) 16%, rgb(138, 159, 192) 100%);
+  border-radius: 3%;
+  margin: 10% 5% 10% 5%;
+  padding: 5% 5% 5% 5%;
+  box-shadow:  0 0 2000px rgba(255, 255, 255, 0);
     
-    width: 50%;
-    
 }
 
-p {
-   
-    font-size:17px;
-    
-
+.image-panel{
+    background-image: url(./background1.jpg);
+    z-index: 5;
+    /* background: linear-gradient(270deg, rgba(9,10,13,1) 0%, rgba(58,72,98,1) 16%, rgb(138, 159, 192) 100%); */
+    /* border-radius: 3%; */
+    margin: 10% 5% 10% 5%;
+    padding: 5% 5% 5% 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    box-shadow:  0 0 2000px rgba(255, 255, 255, 0);
 }
 
-#profile{
-    display: flex;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.glass-panel-mirrored img{
+    margin-right: 10%;
 }
 
-#profileTxt{
-    display: flex;
-    flex-direction: column;
-    padding-left:15%;
+@supports (-webkit-backdrop-filter: none) {
+  .glass-panel {
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
 
-#hello{
-
-}
-
-#name{
-
-}
-
-#nameFooter{
-
-}
-
-#profile img{
-    border-radius: 10%;
-    width: 40%;
-}
